@@ -103,6 +103,6 @@ if __name__ == "__main__" :
         plt.legend(patches, currenciesLegend, bbox_to_anchor=(0.9,1.0))
         plt.title('YATIRIMLAR',{'fontsize': "20",'fontweight' : "40"},bbox=dict(facecolor='black', alpha=4.5))
         plt.text(0.7,-1, "TOTAL = "+ total + " TRY",fontweight ="bold",bbox=dict(facecolor='black', alpha=1.5))
-        plt.savefig(fileName)
+        plt.savefig("snapshots/"+fileName)
         plt.show()
 
