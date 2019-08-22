@@ -72,9 +72,9 @@ if __name__ == "__main__" :
                 sleep(1)
 
         while True :
-                au = RealTimeCurrencyExchangeRate("XAU", "TRY", "api_key")
+                au = RealTimeCurrencyExchangeRate("XAU", "USD", "api_key")
                 if au > 0 :
-                        au = au * float(holdings[3]) / 31.103
+                        au = au * (float(holdings[3]) / 31.103) * (usd / float(holdings[0]))
                         break
                 sleep(1)
 
